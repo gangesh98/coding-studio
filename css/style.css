@@ -6,17 +6,19 @@
 
 /*header-section*/
 header {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: black;
+  /* background-image: linear-gradient(black,black,black); */
+  background-color: #010f44;
 }
 
 .header-menu-bar {
+  left: -77px;
   position: relative;
+  max-width: 100% !important;
   top: 80px;
 }
 
 .header-logo-left {
+  margin-left: 155px;
   color: white;
 }
 
@@ -30,31 +32,40 @@ header {
 
 /*main-section*/
 main {
-  margin-top: -50%;
+  margin-top: -43.45454%;
   margin-left: 100px;
   color: white;
 }
 main h3 {
-  font-size: 45px;
+  font-size: 35px;
 }
 main h1 {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Lobster", cursive;
-  font-size: 100px;
-  margin-top: -25px;
+  font-size: 235px;
+  margin-top: -85px;
 }
 main h2 {
-  font-size: 60px;
-  margin-top: -110px;
+  font-size: 50px;
+  margin-top: -200px;
 }
-main .main-img {
-  margin-top: -270px;
+
+.main-img {
+  margin-top: -310px;
+  max-width: 100% !important;
 }
-main .main-font-sizing {
+
+.main-font-sizing {
   margin-top: 65px;
 }
 
 /*navigation-sectiom*/
+span {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
 .sidenav {
   text-align: center;
   height: 100%;
@@ -96,8 +107,37 @@ main .main-font-sizing {
   }
 
   .sidenav a {
-    font-size: 18px;
+    font-size: 45px;
   }
+}
+.nav-row {
+  margin-top: 200px;
+  display: flex !important;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dot {
+  margin-bottom: 5px;
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-hori-line {
+  border: 1px solid red;
+  height: 2px;
+  width: 100px;
+}
+
+.dot::after {
+  content: " ";
 }
 
 /*# sourceMappingURL=style.css.map */

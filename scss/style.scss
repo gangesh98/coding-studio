@@ -2,22 +2,28 @@
 	margin:0px;
 	padding: 0px;
 	font-family: 'Josefin Sans', sans-serif;
-
+   
 }
  /*header-section*/
 header{
-	margin-top:50px;
-	margin-bottom: 50px;
-    background-color:black;
-}
-.header-menu-bar{
 	
+     
+ /* background-image: linear-gradient(black,black,black); */
+
+    background-color:#010f44;
+}
+
+
+
+.header-menu-bar{
+	left: -77px;
     position: relative;
-    
+    max-width: 100%!important;
     top: 80px;
 }
 .header-logo-left{
 	
+	margin-left: 155px;
 	color: white;
 }
 
@@ -37,27 +43,29 @@ header{
 /*main-section*/
 main{
 	
-    margin-top: -50%;
+    margin-top: -43.45454%;
     margin-left: 100px;
     color: white;
     h3{
-    	font-size: 45px;
+    	font-size: 35px;
     	
     }
     h1{
     	font-family: 'Josefin Sans', sans-serif;
         font-family: 'Lobster', cursive;
-    	font-size: 100px;
-    	margin-top: -25px;
+    	font-size: 235px;
+        margin-top: -85px;
     	
     }
     h2{
-    	font-size: 60px;
-    	margin-top: -110px;
+    	font-size: 50px;
+        margin-top: -200px;
+}
     	
     }
     .main-img{
-    	margin-top: -270px;
+    	margin-top: -310px;
+    	 max-width: 100%!important; 
 
     	
     }
@@ -66,14 +74,14 @@ main{
        margin-top: 65px;
     		
 
-    	}
+    	
 
 
 }
 /*navigation-sectiom*/
 
 
-
+ span{font-size:30px;cursor:pointer;color:white}
 
 
 .sidenav {
@@ -88,6 +96,7 @@ main{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+
 }
 
 .sidenav a {
@@ -113,5 +122,35 @@ main{
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 45px;}
 }
+.nav-row{
+margin-top: 200px;
+display:flex !important;
+color: white;
+font-size: 30px;
+text-decoration:none;
+text-align: center;
+
+}
+.dot {
+  margin-bottom:5px; 
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.nav-hori-line{
+    border: 1px solid red;
+    height: 2px;
+    width: 100px;
+  
+
+}
+.dot::after {
+    content: " ";
+    }
+
