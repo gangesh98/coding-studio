@@ -5,13 +5,144 @@
 }
 
 /*header-section*/
+@media only screen and (max-width: 600px) {
+  #header-rw1-position-1 {
+    order: 1;
+  }
+
+  #header-rw1-position-2 {
+    order: 2;
+  }
+
+  #header-rw1-position-3 {
+    order: 3;
+  }
+
+  #header-rw1-position-4 {
+    order: 4;
+  }
+
+  #header-rw1-position-5 {
+    order: 6;
+  }
+
+  #header-rw1-position-6 {
+    order: 5;
+  }
+
+  #header-rw1-position-7 {
+    order: 8;
+  }
+
+  #header-rw1-position-8 {
+    order: 7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header-rw2-position-1 {
+    order: 1;
+  }
+
+  #header-rw2-position-2 {
+    order: 0;
+  }
+
+  #header-rw2-position-3 {
+    order: 4;
+  }
+
+  #header-rw2-position-4 {
+    order: 3;
+  }
+
+  #header-rw2-position-5 {
+    order: 5;
+  }
+
+  #header-rw2-position-6 {
+    order: 6;
+  }
+
+  #header-rw2-position-7 {
+    order: 7;
+  }
+
+  #header-rw2-position-8 {
+    order: 8;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header-rw3-position-1 {
+    order: 1;
+  }
+
+  #header-rw3-position-2 {
+    order: 2;
+  }
+
+  #header-rw3-position-3 {
+    order: 3;
+  }
+
+  #header-rw3-position-4 {
+    order: 4;
+  }
+
+  #header-rw3-position-5 {
+    order: 6;
+  }
+
+  #header-rw3-position-6 {
+    order: 5;
+  }
+
+  #header-rw3-position-7 {
+    order: 8;
+  }
+
+  #header-rw3-position-8 {
+    order: 7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header-rw4-position-1 {
+    order: 2;
+  }
+
+  #header-rw4-position-2 {
+    order: 1;
+  }
+
+  #header-rw4-position-3 {
+    order: 4;
+  }
+
+  #header-rw4-position-4 {
+    order: 3;
+  }
+
+  #header-rw4-position-5 {
+    order: 5;
+  }
+
+  #header-rw4-position-6 {
+    order: 6;
+  }
+
+  #header-rw4-position-7 {
+    order: 8;
+  }
+
+  #header-rw4-position-8 {
+    order: 7;
+  }
+}
 header {
-  /* background-image: linear-gradient(black,black,black); */
   background-color: #010f44;
 }
 
 .header-menu-bar {
-  left: -77px;
+  left: -100px;
   position: relative;
   max-width: 100% !important;
   top: 80px;
