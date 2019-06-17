@@ -45,7 +45,7 @@
 	#header-rw4-position-5{order:5;}
 	#header-rw4-position-6{order:6;}
 	#header-rw4-position-7{order:8;}
-	#header-rw4-position-8{order:7;}
+	#header-rw4-position-8{order:8;}
 	}
 
 
@@ -56,15 +56,16 @@ header{
      
  
     background-color:#010f44;
+
+
 }
 
-
-
 .header-menu-bar{
-	left: -100px;
-    position: relative;
-    max-width: 100%!important;
-    top: 80px;
+	
+   
+    max-width: 100%;
+    margin: 30px;
+  
 }
 .header-logo-left{
 	
@@ -82,38 +83,86 @@ header{
 
 }
 
+
 /*main-section*/
-main{
-	
-    margin-top: -43.45454%;
-    margin-left: 100px;
-    color: white;
+.main-cont{
+	color: white;
+    max-width: 100%;
+    text-align: center;
+    margin-top: -43%;
+    
     h3{
-    	font-size: 35px;
+    	margin-top: 15px;
+        font-size: 45px;
     	
     }
     h1{
     	font-family: 'Josefin Sans', sans-serif;
         font-family: 'Lobster', cursive;
     	font-size: 235px;
-        margin-top: -85px;
+        margin-top: -80px;
+        margin-bottom: 40px;
     	
     }
     h2{
     	font-size: 50px;
         margin-top: -200px;
-}
+    }
     	
     }
-    .main-img{
-    	margin-top: -310px;
-    	 max-width: 100%!important; 
 
+
+    .main-cont-left{
+	
+	padding-left: 50px;
+}
+@media only screen and (max-width:600px) {
+	.main-cont{
+		max-width: 100%;
+		text-align: center;
+		margin-top: -162.45454%;
+        font-size: 45px;
+        h3{
+        	font-size:23px;
+        	margin-bottom: 20px;
+        } 
+        h1{
+        	font-size: 100px;
+		    margin-top: -45px;
+		    margin-bottom: 30px;
+        }
+	}
+	 .main-cont-left{
+	text-align: center;
+	
+}
+	
+	
+
+}
+
+
+
+    .main-img-right{
+    	text-align: center;
+    	video{
+    		width: 80%;
+		    height: 65%;
+		    object-fit: cover;
+		    text-align: left;
+
+    	}
+
+    	img{ width: 80%;
+		    height: 65%;
+		    object-fit: cover;
+		    text-align: left;
+        }
     	
     }
     .main-font-sizing{
     		
-       margin-top: 65px;
+       /*margin-top: 65px;*/
     		
 
     	
@@ -123,7 +172,12 @@ main{
 /*navigation-sectiom*/
 
 
- span{font-size:30px;cursor:pointer;color:white}
+ .header-menu-icon{
+ 	font-size:30px;
+ 	cursor:pointer;
+ 	color:white;
+
+ }
 
 
 .sidenav {
@@ -162,20 +216,57 @@ main{
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
+
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 45px;}
 }
+
+
+
 .nav-row{
-margin-top: 200px;
-display:flex !important;
-color: white;
-font-size: 30px;
-text-decoration:none;
-text-align: center;
+   font-size: 25px;
+    display: flex !important;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
 
 }
+.nav-pannel {
+	
+	font-size:30px;
+}
+
+@media screen and (max-height:600px) {
 .dot {
+  margin-bottom:5px; 
+  height: 3px;
+  width: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+ 
+ }
+.nav-row{
+	font-size:15px;
+    padding: 0px;
+}
+.nav-pannel {
+	padding: 0px;
+	font-size: 15px;
+}
+
+	}
+/*.nav-pannel{
+	float: none;
+    position: relative;
+    top: -32px;
+    font-size: 35px;
+}*/
+
+
+/*.dot {
   margin-bottom:5px; 
   height: 8px;
   width: 8px;
@@ -184,7 +275,7 @@ text-align: center;
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
-}
+}*/
 .nav-hori-line{
     border: 1px solid red;
     height: 2px;
@@ -196,3 +287,9 @@ text-align: center;
     content: " ";
     }
 
+
+.inner-header {
+	    position: absolute;
+    width: 100%;
+    right: auto;
+}
