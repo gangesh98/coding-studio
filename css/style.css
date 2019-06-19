@@ -137,13 +137,22 @@
     order: 8;
   }
 }
-header {
+.wrapper {
+  position: relative;
   background-color: #010f44;
 }
 
 .header-menu-bar {
+  position: absolute;
   max-width: 100%;
-  margin: 30px;
+  padding: 30px 60px;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+}
+.header-menu-bar img {
+  width: 25%;
+  height: 100%;
 }
 
 .header-logo-left {
@@ -153,44 +162,68 @@ header {
 
 .header-back-img {
   max-width: 100%;
+  background-color: #010f44;
+  height: 25vh;
 }
 
 .header-back-width {
   padding: 0px;
 }
+.header-back-width img {
+  height: 100%;
+  width: 100%;
+  vertical-align: initial;
+  object-fit: cover;
+}
+
+.inner-img {
+  height: 100vh;
+  z-index: 2;
+}
 
 /*main-section*/
-.main-cont {
-  color: white;
-  max-width: 100%;
-  text-align: center;
-  margin-top: -43%;
-}
-.main-cont h3 {
-  margin-top: 15px;
-  font-size: 45px;
-}
-.main-cont h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Lobster", cursive;
-  font-size: 235px;
-  margin-top: -80px;
-  margin-bottom: 40px;
-}
-.main-cont h2 {
-  font-size: 50px;
-  margin-top: -200px;
+.slick-container {
+  width: 100%;
+  height: auto;
 }
 
-.main-cont-left {
-  padding-left: 50px;
+.main-content-area {
+  position: relative;
+}
+
+.main-cont {
+  right: auto;
+  color: white;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  z-index: 20;
+  left: 60px;
+}
+
+.main-cont-left h3 {
+  margin-top: 18px;
+  font-size: 45px;
+  font-family: "Slabo 27px", serif;
+}
+.main-cont-left h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 200px;
+  font-family: "Lobster", cursive;
+  line-height: 80%;
+}
+.main-cont-left p {
+  font-size: 65px;
+  font-family: "Slabo 27px", serif;
+  line-height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
   .main-cont {
     max-width: 100%;
     text-align: center;
-    margin-top: -162.45454%;
+    margin-top: -165.45454%;
     font-size: 45px;
   }
   .main-cont h3 {
@@ -207,8 +240,30 @@ header {
     text-align: center;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-cont h3 {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  .main-cont h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Lobster", cursive;
+    font-size: 100px;
+    margin-top: -35px;
+    margin-bottom: 68px;
+  }
+
+  .main-img-right img {
+    margin-top: 43px;
+    width: 70% !important;
+    height: 70%;
+    object-fit: cover;
+    text-align: left;
+  }
+}
 .main-img-right {
-  text-align: center;
+  text-align: left;
 }
 .main-img-right video {
   width: 80%;
@@ -218,7 +273,7 @@ header {
 }
 .main-img-right img {
   width: 80%;
-  height: 65%;
+  height: 70%;
   object-fit: cover;
   text-align: left;
 }
@@ -269,7 +324,7 @@ header {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 600px) {
   .sidenav {
     padding-top: 15px;
   }
@@ -279,23 +334,33 @@ header {
   }
 }
 .nav-row {
-  font-size: 25px;
   display: flex !important;
   color: white;
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  padding-left: 60px;
+  z-index: 20;
 }
 
 .nav-pannel {
   font-size: 30px;
 }
 
-@media screen and (max-height: 600px) {
+.dot {
+  margin-bottom: 5px;
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
   .dot {
     margin-bottom: 5px;
-    height: 3px;
-    width: 3px;
+    height: 5px;
+    width: 5px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -308,7 +373,7 @@ header {
 
   .nav-pannel {
     padding: 0px;
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 /*.nav-pannel{
@@ -316,7 +381,7 @@ header {
     position: relative;
     top: -32px;
     font-size: 35px;
-}*/
+    }*/
 /*.dot {
   margin-bottom:5px; 
   height: 8px;
@@ -326,7 +391,7 @@ header {
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
-}*/
+  }*/
 .nav-hori-line {
   border: 1px solid red;
   height: 2px;
@@ -338,9 +403,7 @@ header {
 }
 
 .inner-header {
-  position: absolute;
-  width: 100%;
-  right: auto;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

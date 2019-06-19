@@ -1,12 +1,27 @@
-(Content-Type: text/js)
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<span onclick="openNav()">&#9776; </span>
 
-	<script>
+	
 	function openNav() {
 	  document.getElementById("mySidenav").style.width = "100%";
 	}
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
 	}
-	</script>
+	// slider-main
+	$(document).ready(function(){
+  
+ $('.main-cont').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.nav-row'
+});
+$('.nav-row').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main-cont',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+});
