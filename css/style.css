@@ -138,8 +138,11 @@
   }
 }
 .wrapper {
+  margin: 0px;
+  padding: 0px;
   position: relative;
   background-color: #010f44;
+  /*overflow: hidden;*/
 }
 
 .header-menu-bar {
@@ -147,7 +150,8 @@
   max-width: 100%;
   padding: 30px 60px;
   width: 100%;
-  z-index: 20;
+  z-index: 999;
+  opacity: 1;
   top: 0;
 }
 .header-menu-bar img {
@@ -163,7 +167,9 @@
 .header-back-img {
   max-width: 100%;
   background-color: #010f44;
-  height: 25vh;
+  height: 24vh;
+  z-index: 2;
+  opacity: 0.4;
 }
 
 .header-back-width {
@@ -177,8 +183,8 @@
 }
 
 .inner-img {
-  height: 100vh;
-  z-index: 2;
+  /*	height: 100vh;*/
+  /* z-index: 2;*/
 }
 
 /*main-section*/
@@ -198,10 +204,13 @@
   width: 100%;
   position: absolute;
   top: 20%;
-  z-index: 20;
-  left: 60px;
+  z-index: 999;
+  opacity: 1;
 }
 
+.main-cont-left {
+  padding-left: 75px;
+}
 .main-cont-left h3 {
   margin-top: 18px;
   font-size: 45px;
@@ -216,7 +225,11 @@
 .main-cont-left p {
   font-size: 65px;
   font-family: "Slabo 27px", serif;
-  line-height: 100%;
+  line-height: 75%;
+}
+
+.header-menu-bar, .header-menu-icon {
+  z-index: 10000;
 }
 
 @media only screen and (max-width: 600px) {
@@ -272,7 +285,7 @@
   text-align: left;
 }
 .main-img-right img {
-  width: 80%;
+  width: 88%;
   height: 70%;
   object-fit: cover;
   text-align: left;
@@ -284,7 +297,7 @@
 
 /*navigation-sectiom*/
 .header-menu-icon {
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   color: white;
 }
@@ -301,6 +314,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  z-index: 999;
 }
 
 .sidenav a {
@@ -310,6 +324,7 @@
   color: #818181;
   display: block;
   transition: 0.3s;
+  z-index: 999;
 }
 
 .sidenav a:hover {
@@ -322,6 +337,7 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  z-index: 999;
 }
 
 @media screen and (max-width: 600px) {
@@ -339,18 +355,25 @@
   position: absolute;
   top: 90%;
   width: 100%;
-  padding-left: 60px;
-  z-index: 20;
+  z-index: 999;
+  opacity: 1;
 }
 
-.nav-pannel {
-  font-size: 30px;
+.nav-pannel a {
+  font-size: 40px;
+  color: white;
+  margin: 10px 0px 10px 15px;
+}
+.nav-pannel p {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .dot {
-  margin-bottom: 5px;
-  height: 8px;
-  width: 8px;
+  margin-left: 15px;
+  margin-bottom: 7px;
+  height: 10px;
+  width: 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -358,9 +381,10 @@
 
 @media screen and (max-width: 600px) {
   .dot {
-    margin-bottom: 5px;
-    height: 5px;
-    width: 5px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    height: 10px;
+    width: 10px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -404,6 +428,15 @@
 
 .inner-header {
   position: relative;
+}
+
+.nav-pannel:after {
+  content: "";
+  position: absolute;
+  padding: 5px;
+  border-top: 5px solid #fff;
+  width: 165px;
+  top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
