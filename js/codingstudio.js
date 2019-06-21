@@ -23,7 +23,22 @@
 	  arrows: false,
 	  centerMode: true,
 	  focusOnSelect: true,
-	  // $('.slick-prev').hide();
-   //    $('.slick-next').hide();
+       responsive: [
+    {
+      breakpoint:600,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        
+      }
+    },
+    ]
    	});
 	});
